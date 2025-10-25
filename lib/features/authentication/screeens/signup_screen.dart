@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gearshift/features/authentication/screeens/login_screen.dart';
 import 'package:gearshift/utils/constrnts/images_strings.dart';
+import 'package:get/get.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -33,7 +35,7 @@ class SignupScreen extends StatelessWidget {
                  SizedBox(height: 50,),
                  Padding(
                    padding: const EdgeInsets.all(15),
-                   child: SizedBox(width:double.infinity,height: 50,child: ElevatedButton(onPressed: (){}, child:  Row(
+                   child: SizedBox(width:double.infinity,height: 50,child: ElevatedButton(onPressed: ()=>Get.to(() => LoginScreen()), child:  Row(
                      children: [
                       Image(image: AssetImage(GImages.google,),
                       width: 24,
